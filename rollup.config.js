@@ -9,6 +9,5 @@ export default {
       format: 'esm'
     }
   ],
-  plugins: [ts()],
-  external: [...Object.keys(dependencies)]
+  plugins: [ts()]
 }

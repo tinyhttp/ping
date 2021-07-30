@@ -1,12 +1,12 @@
 {
-  "name": "repo-starter",
-  "version": "0.0.0",
+  "name": "@tinyhttp/ping",
+  "version": "2.0.0",
   "type": "module",
-  "description": "description",
-  "homepage": "https://github.com/tinyhttp/repo#readme",
+  "description": "Response time checker middleware",
+  "homepage": "https://github.com/tinyhttp/ping#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tinyhttp/repo.git"
+    "url": "https://github.com/tinyhttp/ping.git"
   },
   "engines": {
     "node": ">=12.4 || 14.x || >=16"
@@ -18,7 +18,11 @@
     "node.js",
     "web framework",
     "web",
-    "backend"
+    "backend",
+    "ping",
+    "x-response-time",
+    "middleware",
+    "performance"
   ],
   "author": "v1rtl",
   "license": "MIT",
@@ -39,7 +43,6 @@
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@rollup/plugin-typescript": "^8.2.4",
-    "@tinyhttp/app": "1.3.15",
     "@types/node": "^16.4.7",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
@@ -48,7 +51,6 @@
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "expect": "^27.0.6",
     "husky": "^7.0.1",
     "prettier": "^2.3.2",
     "rollup": "^2.55.1",

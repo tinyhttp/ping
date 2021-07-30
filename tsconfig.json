@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
+    "rootDir": ".",
     "outDir": "dist",
     "declaration": true,
     "declarationDir": "dist",
@@ -10,5 +10,5 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node"
   },
-  "include": ["./src/*.ts"]
+  "include": ["src", "tests"]
 }

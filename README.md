@@ -1,22 +1,49 @@
 <div align="center">
 
-# repo-template
+# @tinyhttp/ping
 
 [![npm][npm-img]][npm-url] [![GitHub Workflow Status][gh-actions-img]][github-actions] [![Coverage][cov-img]][cov-url]
 
 </div>
 
-Description.
+> Inspired by [koa-response-time](https://github.com/koajs/response-time)
+
+Response time checker for tinyhttp. Sets `X-Response-Time` header using `process.hrtime()`
 
 ## Install
 
 ```sh
-pnpm i pkg
+pnpm i @tinyhttp/ping
 ```
 
-[npm-url]: https://npmjs.com/package/@tinyhttp/favicon
-[github-actions]: https://github.com/tinyhttp/favicon/actions
-[gh-actions-img]: https://img.shields.io/github/workflow/status/tinyhttp/favicon/CI?style=for-the-badge&logo=github&label=&color=hotpink
-[cov-img]: https://img.shields.io/coveralls/github/tinyhttp/favicon?style=for-the-badge&color=hotpink
-[cov-url]: https://coveralls.io/github/tinyhttp/favicon
-[npm-img]: https://img.shields.io/npm/dt/@tinyhttp/favicon?style=for-the-badge&color=hotpink
+## API
+
+```js
+import { ping } from '@tinyhttp/ping'
+```
+
+### Options
+
+#### `round`
+
+Round the ping time. Default is set to true.
+
+## Example
+
+```js
+import { ping } from '@tinyhttp/ping'
+import { createServer } from 'http'
+import path from 'path'
+
+createServer(async (req, res) => {
+  ping()(req, res)
+  res.end('Hello World')
+}).listen(3000)
+```
+
+[npm-url]: https://npmjs.com/package/@tinyhttp/ping
+[github-actions]: https://github.com/tinyhttp/ping/actions
+[gh-actions-img]: https://img.shields.io/github/workflow/status/tinyhttp/ping/CI?style=for-the-badge&logo=github&label=&color=hotpink
+[cov-img]: https://img.shields.io/coveralls/github/tinyhttp/ping?style=for-the-badge&color=hotpink
+[cov-url]: https://coveralls.io/github/tinyhttp/ping
+[npm-img]: https://img.shields.io/npm/dt/@tinyhttp/ping?style=for-the-badge&color=hotpink
