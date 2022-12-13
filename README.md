@@ -8,7 +8,7 @@
 
 > Inspired by [koa-response-time](https://github.com/koajs/response-time)
 
-Response time checker for tinyhttp. Sets `X-Response-Time` header using `process.hrtime()`
+Response time checker for Node.js. Sets `X-Response-Time` header using `process.hrtime()`
 
 ## Install
 
