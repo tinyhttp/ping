@@ -1,5 +1,4 @@
 import ts from '@rollup/plugin-typescript'
-import { dependencies } from './package.json'
 
 export default {
   input: 'src/index.ts',
